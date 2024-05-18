@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM golang:1.22.3-alpine3.19 AS build
+FROM --platform=$BUILDPLATFORM golang:1.22.3-alpine AS build
 RUN apk add build-base
 WORKDIR /app
 COPY vendor vendor
