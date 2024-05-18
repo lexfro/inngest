@@ -1,0 +1,14 @@
+steps:
+    - name: "gcr.io/cloud-builders/docker"
+      args: [
+              "build",
+              "-t",
+              "us-docker.pkg.dev/cloudrun/container/hello
+              ",
+              ".",
+          ]
+      env:
+          - "DOCKER_BUILDKIT=1"
+
+images:
+    - "us-docker.pkg.dev/cloudrun/container/hello"
